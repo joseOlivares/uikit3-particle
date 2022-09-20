@@ -7,7 +7,7 @@ form:
     enabled:
       type: input.checkbox
       label: Enabled
-      description: Globally enable UIkit for Gantry5 particles.
+      description: Globally enable UIkit 3.x for Gantry5 particles.
       default: true
 
     _note:
