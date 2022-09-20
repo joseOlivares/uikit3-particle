@@ -1,0 +1,32 @@
+name: UIkit 3.x for Gantry5
+description: Configure UIkit for Gantry5 (By José Luis Olivares).
+type: atom
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable UIkit for Gantry5 particles.
+      default: true
+
+    _note:
+      type: separator.note
+      class: alert alert-info
+      content: 'This Atom loads Uikit 3 minified (Icons included), version:3.15.9 <a href="https://getuikit.com/" target="_blank"> UIkit Framework</a> '
+
+    jslocation:
+      type: select.select
+      label: JS Location
+      description: Select where the UIkit JS assets should be loaded. The default and recommended location is 'Footer' (before the closing body tag).
+      placeholder: 'Select...'
+      default: footer
+      options:
+        footer: Footer
+        head: Head
+
+    icons_enabled:
+      type: input.checkbox
+      label: Uikit Icons enabled
+      description: Globally enable UIkit Icons for Gantry5 particles.
+      default: true
